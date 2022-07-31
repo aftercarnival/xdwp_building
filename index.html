@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--Geolocalização - coordenada exata em latitude e longitude - com html (na verdade, é Javascript): https://www.w3schools.com/html/html5_geolocation.asp
+
+Para mudar a linguagem automaticamente, um dos códigos é este:
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language
+
+verificar como relacionar o GPS à linguagem-->
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xdwp curso em video meu primeiro exercicio</title>
+
+        <link rel="stylesheet" href="style.css">
+
+
+
+
+    
+
+</head>
+
+
+<body>
+
+<!--
+
+Parei em 
+
+https://www.cursoemvideo.com/curso/javascript/aulas/conhecendo-o-javascript/
+
+
+https://www.bing.com/search?q=svg+animation+as+background&cvid=82b158b409584678a8a22a4cbd6d6a7b&aqs=edge..69i57j0l8.7220j0j1&pglt=43&FORM=ANNTA1&PC=DCTS
+
+https://www.bing.com/search?q=use+svg+video+as+background&qs=n&form=QBRE&sp=-1&pq=use+svg+video+as+ba&sc=8-19&sk=&cvid=6E35D290D1BB45209D9E726F8546F6BF&ghsh=0&ghacc=0&ghpl=
+
+https://www.bing.com/search?q=use+video+as+background+&go=Pesquisar&qs=ds&form=QBRE
+
+https://www.bing.com/search?q=use+canvas+as+background+&qs=n&form=QBRE&sp=-1&pq=&sc=0-0&sk=&cvid=026C045630604F6B86BDBCA95551EF01&ghsh=0&ghacc=0&ghpl=
+
+https://www.bing.com/search?q=use+threejs+as+background+&go=Pesquisar&qs=ds&form=QBRE
+
+https://www.bing.com/search?q=use+video+in+three+js&go=Pesquisar&qs=ds&form=QBRE
+
+https://www.bing.com/search?q=web+crawling+with+javascript&qs=n&form=QBRE&sp=-1&pq=&sc=0-0&sk=&cvid=AD07CDDFE2EF43B29FB9271DCA668075&ghsh=0&ghacc=0&ghpl=
+
+https://www.bing.com/search?q=web+scraping+with+javascript&FORM=AWRE
+
+https://www.scrapingbee.com/blog/web-scraping-javascript/
+
+https://webscraping.ai/blog/web-scraping-with-javascript
+
+https://www.w3schools.com/howto/howto_css_search_button.asp
+
+https://www.w3schools.com/nodejs/default.asp
+
+https://www.w3schools.com/js/default.asp
+
+https://www.w3schools.com/js/js_json_intro.asp
+
+https://www.bing.com/search?q=data+driven+ux&qs=n&form=QBRE&sp=-1&pq=data+driven+ux&sc=3-14&sk=&cvid=45121E1B1F9448429C60DA6BD55912D2&ghsh=0&ghacc=0&ghpl=
+
+
+
+
+
+Colocar um cabeçalho semelhante à Amazon. Fundo verde, mexendo-se com svg, algo assim. 
+Daí, um botão com vários produtos da cesta básica e um segundo botão
+com as marcas dos produtos.
+
+À esquerda, o local onde a pessoa está, definido por GPS, se ela quiser ou pode colocar o cep do local ou 
+pode pesquisar a cidade e o bairro
+
+Possibilidade de alertas de duas ou três cidades, para quem está sempre viajando
+
+
+
+
+
+
+    <h1 style="font-family:verdana;">xdwp</h1>
+
+    <input type="basico" name="" value="">
+
+<select name="" id="">
+
+    <option value="">Café</option> 
+
+    <option value="">Leite</option>
+
+    <option value="">Pãozinho</option>
+
+    <option value="">Margarina</option>
+
+    </select>
+
+    Acima, o código do meu app xdwp começa a ganhar forma
+
+    <h2>Botões para outros links</h2>
+
+    <p><style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</p>
+
+<p>Clicar no botão para ver blog</p>
+
+<button onclick="document.location='https://xdatawatchai.wordpress.com'">Blog</button>
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="default.asp" target="_blank">This is a link</a>
+
+</body>
+
+<p>
+
+Começando a codar a busca
+
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<h2>Animate width of search input</h2>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+</body>
+</p>
+
+<h2>Background Image</h2>
+
+<p>Aqui, a possibilidade de se colocar imagem por trás do cabeçalho do xdwp, com animaçãozinha
+em svg ou treejs ou outra</p>
+
+<p style="background-image: url('nudista.jpg');">
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a p element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.
+</p>
+
+
+
+
+<p><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: 
+hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed 
+{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<iframe src='https://www.youtube.com/embed//JzjKiMM_mLk' frameborder='0' allowfullscreen></iframe></div>
+
+
+
+
+
+Colocar uma lista de apps de supermercados favoritos e pesquisar os apps de cada região do mundo.
+
+
+Já á bom cair para o tutorial de css, no W3 e também Javascript. 
+Pesquise scrapping e crawling com Javascript. Já tem as libs aqui em baixo.
+
+Logo, comece a estudar Python, para colocar o webscrapping e webcrawler no site.
+
+<style>
+body {
+  background-image: url('nudista.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>Imagem fixa, mexendo só o texto</h2>
+
+<p>Set the background-size property to "cover" 
+and the backgroundimage will cover the entire element, in this case the body element.</p>-->
+
+
+
+
+    <p>xdata.watch price é um app criado por William Wilson para a xdata.watch.</p>
+
+    <address>
+William Wilson<br> 
+xdata.watch<br>
+São Paulo, Brasil<br>
+desde julho de 2022
+
+
+</address>
+
+<p>
+
+<!--Ajusta-se à tela
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  border-spacing: 30px;
+}
+</style>
+</head>
+<body>
+
+<h2>Cellspacing</h2>
+<p>Change the space between the cells with the border-spacing property.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+</p>
+<p><div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div> </p>
+<p><title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</p>
+<p>
+<body>
+
+<div class="w3-container w3-green">
+  <h1>W3Schools Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+
+</body>
+</P>
+corrigir em https://www.w3schools.com/html/html_responsive.asp
+
+
+
+
+
+
+
+
+<h1>Exemplo de caixa box-level</h1>
+<p>Parágrafos também são exemplos de box-levels, mas os <a href="">links</a> são exemplos de caixas inline-levels.<<br>
+Vamos ver como tudo isso funciona.
+
+
+
+
+
+
+<p>Ferramentas: <br>
+Html5<br>
+Css<br>
+Javascript<br>
+Visual Studio Code<br>
+Github Copilot<p>
+Editor X<br>
+Nodejs</p>
+
+    <h1>Excercícios Curso em video css</h1>
+
+<h2>Um pouco mais</h2>
+
+<p>Com a ajuda do Github Copilot, é possível descobrir libs interessantes.</p>
+
+    <p>olá tudo bem como vai meu <span class= "basico">  fio duma olha eu sei lá o que é isso.</span></p>
+
+    Se não declarar a span class no arquivo style.ccs, não adianta nada
+    
+    Pode botar duas classes, separadas por espaço, como span class="lala lulu"
+
+    <div>
+        <p>
+            <span class="basico">
+                Olá, eu sou um texto com classe basica.
+            </span>
+        </p>
+        <p>
+            <span class="especial">
+                Olá, eu sou um texto com classe especial.
+            </span>
+        </p>
+      
+    </div>
+
+<main>
+
+    <h2>Exercício 1</h2>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+  
+</main>
+
+<article>
+    <h2>Exercício 2</h2>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+  
+
+</article>
+
+<aside>
+
+    <h2>Exercício 3</h2>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+  
+</aside>
+
+<footer>
+    <h2>Exercício 4</h2>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+  
+</footer>
+
+<form>
+
+    <h2>Exercício 5</h2>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+  
+</form>
+
+<label for="form">
+
+    <h2>Exercício 6</h2>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+        </span>
+    </p>
+    <p>
+        <span class="basico">
+            Olá, eu sou um texto com classe basica.
+        </span>
+    </p>
+    <p>
+        <span class="especial">
+            Olá, eu sou um texto com classe especial.
+
+
+
+
+
+</label>
+
+
+
+
+
+
+
+
+
+    
+    <h1>Olá, Mundo!</h1>
+    <hr>
+    <p>Este é o meu primeiro documento html, do comparador de preços de supermercados xdwp, 
+        estou muito feliz, porque vou ficar bilionário muito em breve.</p>
+        <p>Este é o momento único, estou criando enfim meu primeiro site para ficar bilionário</p>
+
+        <pre>Minha terra tem bandeiras
+        Onde canta o sabiá
+        A terra que aqui gorjeia
+        Não gorjeita como lá.
+        
+        Eu esqueci o poema</pre>
+
+        <p>"pre" é sempre a fonte courier</p>
+
+<p>AQUI COMEÇA O CSS </p>
+
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+
+
+
+<p><link rel="stylesheet" href="//unpkg.com/grapesjs/dist/css/grapes.min.css">
+<script src="//unpkg.com/grapesjs"></script>
+
+If you need plugins, put them below the main grapesjs script
+<script src="/path/to/some/plugin.min.js"></script>
+--&gt;</link>
+<div id="gjs">
+
+
+  <h1>Hello World Component!</h1>
+</div></p>
+
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: red;
+}
+</style>
+
+
+<p>
+    <script>
+
+    function calculateDaysBetweenDates(begin, end) {
+        var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+        var firstDate = new Date(begin);
+        var secondDate = new Date(end);
+    
+        return Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    }
+    
+    // find all images without alternate text
+    // and give them a red border
+    function process() {
+    
+    
+    // find all images without alternate text
+    // and give them a red border
+    function process() {
+        var images = document.getElementsByTagName('img');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].alt == '') {
+                images[i].style.border = '2px solid red';
+            }
+        }
+    }
+    
+    //code a simple search engine that can search for a word in a page
+    
+    function search(word) {
+        var text = document.body.innerText;
+        var words = text.split(' ');
+        for (var i = 0; i < words.length; i++) {
+            if (words[i] == word) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    //code a web scrpping engine that supports the following features:
+    // - Scrape a webpage for a given tag
+    // - Scrape a webpage for a given tag and attribute
+    // - Scrape a webpage for a given tag and attribute value
+    // - Scrape a webpage for a given tag and attribute value and text content
+    // - Scrape a webpage for a given tag and attribute value and text content and return the text content
+    // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array
+    // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array and the attribute value as an array
+    // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array and the attribute value as an array and the attribute name as an array
+    // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array and the attribute value as an array and the attribute name as an array and the attribute value as an array
+    
+    function get
+        
+        function scrape(url, tag, attribute, value) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, false);
+            xhr.send();
+            var html = xhr.responseText;
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(html, 'text/html');
+            var elements = doc.getElementsByTagName(tag);
+            var result = [];
+            for (var i = 0; i < elements.length; i++) {
+                if (attribute == null) {
+                    result.push(elements[i].innerText);
+                } else if (value == null) {
+                    result.push(elements[i].getAttribute(attribute));
+                } else {
+                    if (elements[i].getAttribute(attribute) == value) {
+                        result.push(elements[i].innerText);
+                    }
+                }
+            }
+            return result;
+        }
+        
+        //code a web scrapping engine that supports the following features:
+        // - Scrape a webpage for a given tag
+        // - Scrape a webpage for a given tag and attribute
+        // - Scrape a webpage for a given tag and attribute value
+        // - Scrape a webpage for a given tag and attribute value and text content
+        // - Scrape a webpage for a given tag and attribute value and text content and return the text content
+        // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array
+        // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array and the attribute value as an array
+        // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array and the attribute value as an array and the attribute name as an array
+        // - Scrape a webpage for a given tag and attribute value and text content and return the text content as an array and the attribute value as an array and the attribute name as an array and the attribute value as an array
+        
+        function scrape(url, tag, attribute, value) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, false);
+    
+            //code a webcrawling with javascript
+    
+            function parse
+                function parse(url, tag, attribute, value) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET', url, false);
+                    xhr.send();
+                    var html = xhr.responseText;
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(html, 'text/html');
+                    var elements = doc.getElementsByTagName(tag);
+                    var result = [];
+                    for (var i = 0; i < elements.length; i++) {
+                        if (attribute == null) {
+                            result.push(elements[i].innerText);
+                        } else if (value == null) {
+                            result.push(elements[i].getAttribute(attribute));
+                        } else {
+                            if (elements[i].getAttribute(attribute) == value) {
+                                result.push(elements[i].innerText);
+                            }
+                        }
+                    }
+                    return result;
+                }
+
+                </script>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+    
+
+    
